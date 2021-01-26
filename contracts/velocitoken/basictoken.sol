@@ -25,6 +25,6 @@ contract ERC20PresetFixedSupply is ERC20Burnable {
         uint256 initialSupply,
         address owner
     ) public ERC20(name, symbol) {
-        _mint(owner, initialSupply);
+        _mint(owner, initialSupply*10**18);
     }
 }
